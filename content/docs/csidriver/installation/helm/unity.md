@@ -227,7 +227,7 @@ Procedure
 
               
 
-7. Run the `./csi-install.sh --namespace unity --values ./myvalues.yaml` command to proceed with the installation.
+7. Run the `./csi-install.sh --namespace unity --values ./myvalues.yaml` command to proceed with the installation using bash script.
 
     A successful installation must display messages that look similar to the following samples:
     ```
@@ -296,7 +296,8 @@ Procedure
     
     * One or more Unity Controller (based on controllerCount) with 5/5 containers ready, and status displayed as Running.
     * Agent pods with 2/2 containers and the status displayed as Running. 
-    
+
+8. You can also install the driver using standalone helm chart using the command `helm install --values  myvalues.yaml --namespace unity unity ./csi-unity`    
 
 ## Certificate validation for Unisphere REST API calls 
 
